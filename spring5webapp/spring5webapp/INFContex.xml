@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+    <Resource
+            name="jdbc/db" type="javax.sql.DataSource"
+            maxActive="100" maxIdle="30" maxWait="10000"
+            url="jdbc:mysql://hostname.com/db"
+            driverClassName="com.mysql.jdbc.Driver"
+            username="user" password="pass"
+    />
+    <resource-env-ref>
+        <resource-env-ref-name>jdbc/db</resource-env-ref-name>
+        <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
+    </resource-env-ref>
+</Context>
